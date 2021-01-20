@@ -6,15 +6,24 @@
   "properties": {
     "name": {
       "type": "string",
-      "x-prompt": "What's the file name? (matches path)"
+      "x-prompt": "What's the component name?"
     },
     "hasForm": {
       "type": "boolean",
-      "x-prompt": "Does your modal need form in it? (matches path)"
+      "x-prompt": "Does your modal need form in it?"
+    },
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to create the component.",
+      "visible": false
     },
     "project": {
       "type": "string",
-      "description": "Generate in specific Angular cli workspace"
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
     }
   },
   "required": [

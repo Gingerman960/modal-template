@@ -4,7 +4,7 @@ import {filter, takeUntil} from 'rxjs/operators';
 import {ModalService} from '@spa-common/@components/modal/modal.service';
 <% if (hasForm) { %>import {FormSubject} from '@spa-common/@formelements/utils/FormSubject';
 import {FormService} from '@spa-common/@formelements/form.service';<% } %>
-import {<% if (hasForm) { %>FORM, FORM_COLUMNS, <% } %><%= underCase(name) %>_WINDOW_CONFIG} from '../config/myanother-modal.config';
+import {<% if (hasForm) { %>FORM, FORM_COLUMNS, <% } %><%= underCase(name) %>_WINDOW_CONFIG} from './config/<%=dasherize(name)%>.config';
 
 
 @Component({

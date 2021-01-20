@@ -1,6 +1,6 @@
-export const MYANOTHER_MODAL_WINDOW_CONFIG = {
-    id: 'myanother-modal',
-    title: 'MyanotherModal',
+export const <%= underCase(name)%>_WINDOW_CONFIG = {
+    id: '<%=dasherize(name)%>',
+    title: '<%=capitalize(name)%>',
     customClasses: [''],
     width: 500
 };

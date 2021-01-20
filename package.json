@@ -1,11 +1,12 @@
 {
-  "name": "uscs-modal-template",
-  "version": "0.0.0",
+  "name": "@gingerman960/modal-template",
+  "version": "1.0.3",
   "description": "A modal schematics",
   "scripts": {
     "build:watch": "tsc -p tsconfig.json --watch",
     "build": "tsc -p tsconfig.json",
-    "test": "npm run build && jasmine src/**/*_spec.js"
+    "test": "npm run build && jasmine src/**/*_spec.js",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "schematics"
@@ -25,5 +26,13 @@
     "@types/jasmine": "~3.5.0",
     "jasmine": "^3.5.0"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Gingerman960/modal-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gingerman960/modal-template/issues"
+  },
+  "homepage": "https://github.com/Gingerman960/modal-template#readme"
 }
