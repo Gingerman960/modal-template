@@ -1,0 +1,17 @@
+<modal [config]="modalConfig">
+    <div [ngClass]="{loading: loading}">
+        <% if (hasForm) { %><div class="form-container">
+            <div class="row">
+                <div class="col-12">
+                    <formelements [id]="form.id"></formelements>
+                </div>
+            </div>
+        </div> <% } %>
+        <div class="row btn-container">
+            <div class="col-12">
+                <button class="btn btn-primary" (click)="submit()">Submit</button>
+                <button class="btn btn-link" (click)="cancel()">Cancel</button>
+            </div>
+        </div>
+    </div>
+</modal>

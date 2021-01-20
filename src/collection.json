@@ -1,0 +1,15 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "name": "uscs",
+  "extends": [
+    "@schematics/angular"
+  ],
+  "schematics": {
+    "uscs-modal-schematic": {
+      "description": "Modal template schematic.",
+      "factory": "./uscs-modal-schematic/index#uscsModalSchematic",
+      "schema": "./schema.json",
+      "aliases": ["modal"]
+    }
+  }
+}

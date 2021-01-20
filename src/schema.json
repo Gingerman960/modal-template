@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "uscs-modal-schematics",
+  "title": "Custom modal template schematics",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-prompt": "What's the file name? (matches path)"
+    },
+    "hasForm": {
+      "type": "boolean",
+      "x-prompt": "Does your modal need form in it? (matches path)"
+    },
+    "project": {
+      "type": "string",
+      "description": "Generate in specific Angular cli workspace"
+    }
+  },
+  "required": [
+    "name", "hasForm"
+  ]
+}
