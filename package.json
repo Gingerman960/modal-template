@@ -1,6 +1,6 @@
 {
   "name": "@gingerman960/modal-template",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A modal schematics",
   "scripts": {
     "build:watch": "tsc -p tsconfig.json --watch",
