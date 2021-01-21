@@ -1,2 +1,5 @@
 # Ignores TypeScript files, but keeps definitions.
 !*.d.ts
+.idea/
+jsconfig.json
+.vscode/
